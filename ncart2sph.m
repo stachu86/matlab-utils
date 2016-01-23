@@ -4,6 +4,7 @@ function [ sph ] = ncart2sph(cart)
 %   to points in N-dimensional space.
 %
 %   author: skacprza@agh.edu.pl
+%   based on: https://en.wikipedia.org/wiki/N-sphere#Spherical_coordinates
 
 [m,n] = size(cart);
 sph = zeros(m,n);
