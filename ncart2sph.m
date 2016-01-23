@@ -3,7 +3,7 @@ function [ sph ] = ncart2sph(cart)
 %   [SPH] = NCART2SPH(CART) where CART is n by d matrix. Rows corresponds
 %   to points in N-dimensional space.
 %
-%   author: skacprza@agh.edu.pls
+%   author: skacprza@agh.edu.pl
 
 [m,n] = size(cart);
 sph = zeros(m,n);
