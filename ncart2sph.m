@@ -25,7 +25,7 @@ for i=1:m
     end
     
     if cart(i,n) < 0 && n > 1
-        cart(i,n) = 2*pi - cart(i,n);
+        sph(i,n) = 2*pi - sph(i,n);
     end
 end
 
