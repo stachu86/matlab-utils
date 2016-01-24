@@ -1,6 +1,6 @@
 function [ sph ] = nacrt2sph_fast(cart)
-%NCART2SPH Transform N-dimensional Cartesian vector to spherical coordinates.
-%   [SPH] = NCART2SPH(CART) where CART is n by d matrix. Rows corresponds
+%NCART2SPH_FAST Transform N-dimensional Cartesian vector to spherical coordinates.
+%   [SPH] = NCART2SPH_FAST(CART) where CART is n by d matrix. Rows corresponds
 %   to points in N-dimensional space.
 %
 %   author: skacprza@agh.edu.pls
