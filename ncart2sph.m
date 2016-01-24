@@ -3,7 +3,9 @@ function [ SPH ] = ncart2sph(cart)
 %   [SPH] = NCART2SPH(CART) where CART is n by d matrix. Rows corresponds
 %   to points in N-dimensional space.
 %
-%   author: skacprza@agh.edu.pls
+%   based on: https://en.wikipedia.org/wiki/N-sphere#Spherical_coordinates
+%   author: skacprza@agh.edu.pl
+
 
 [m,n] = size(cart);
 SPH = cell(m,1);

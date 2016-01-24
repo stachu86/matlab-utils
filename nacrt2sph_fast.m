@@ -3,7 +3,8 @@ function [ sph ] = nacrt2sph_fast(cart)
 %   [SPH] = NCART2SPH_FAST(CART) where CART is n by d matrix. Rows corresponds
 %   to points in N-dimensional space.
 %
-%   author: skacprza@agh.edu.pls
+%   based on: https://en.wikipedia.org/wiki/N-sphere#Spherical_coordinates
+%   author: skacprza@agh.edu.pl
 
 [m,n] = size(cart);
 sph = zeros(m,n);
