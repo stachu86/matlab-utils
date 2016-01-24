@@ -6,14 +6,14 @@ function [ L, W] = wccn( X,Y,alfa)
 %       alfa - smooth coefficient
 %           
 %       Example: 
-%       X = rand(900,3);
-%       Y = kron([1:3],ones(1,300));
 %       L = within_class_covariance( X,Y);
-%       
 %       X_wccn = X * L;
 %       
 %       author: skacprza@agh.edu.pl
 %
+%       based on:
+%       Hatch, Andrew O., Sachin S. Kajarekar, and Andreas Stolcke.
+%       "Within-class covariance normalization for SVM-based speaker recognition." Interspeech. 2006.
 
 W = zeros(size(X,2));
 C = unique(Y);
