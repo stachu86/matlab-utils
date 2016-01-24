@@ -8,7 +8,7 @@ function [ SPH ] = ncart2sph(cart)
 [m,n] = size(cart);
 SPH = cell(m,1);
 
-parfor i=1:m
+for i=1:m
     sph = zeros(1,n);
     sph(1) = norm(cart);
     for k=1:n-1
