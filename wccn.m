@@ -6,7 +6,7 @@ function [ L, W] = wccn( X,Y,alfa)
 %       alfa - smooth coefficient
 %           
 %       Example: 
-%       L = within_class_covariance( X,Y);
+%       L = wccn( X,Y);
 %       X_wccn = X * L;
 %       
 %       author: skacprza@agh.edu.pl
