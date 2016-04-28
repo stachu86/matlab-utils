@@ -3,7 +3,7 @@ function [ L, W] = wccn( X,Y,alfa)
 %       Within-Class Covariance Normalization
 %       X - observations matrix(rows corespond to observations)
 %       Y - class row vector
-%       alfa - smooth coefficient
+%       alfa - smooth coefficient (optional)
 %           
 %       Example: 
 %       L = wccn( X,Y);
