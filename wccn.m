@@ -26,7 +26,7 @@ W = W./length(C);
 
 % optional smoothing
 if nargin == 3
-    W = (1-alfa)*W + alfa*eye(D);
+    W = (1-alfa)*W + alfa*eye(length(W));
 end
 
 L = chol((W)^-1,'lower');
