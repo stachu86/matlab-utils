@@ -14,6 +14,9 @@ function [ L, W] = wccn( X,Y,alfa)
 %       based on:
 %       Hatch, Andrew O., Sachin S. Kajarekar, and Andreas Stolcke.
 %       "Within-class covariance normalization for SVM-based speaker recognition." Interspeech. 2006.
+%
+%       Dehak, Najim, et al. "Front-end factor analysis for speaker verification."
+%       IEEE Transactions on Audio, Speech, and Language Processing 19.4 (2011): 788-798.
 
 W = zeros(size(X,2));
 C = unique(Y);
