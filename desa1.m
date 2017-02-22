@@ -17,7 +17,7 @@ function [ ins_f ] = desa1( x, fs )
 assert(length(x) >= 3,'Signal is too short!');
 
 y = [0 diff(x)]; % extrapolate first sample of diff
-t_x = teo(x); %teager from VOICEBOX
+t_x = teo(x);
 t_y = teo(y);% extrapolate first tko sample
 
 % ins_f = 2*asin(sqrt((t_y(2:end)+t_y(1:end-1))./(8*t_x(1:end-1))));
