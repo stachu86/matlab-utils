@@ -11,6 +11,8 @@ function [ ins_f ] = desa1( x, fs )
 % Maragos, Petros, James F. Kaiser, and Thomas F. Quatieri.
 % "Energy separation in signal modulations with application to speech analysis."
 % IEEE transactions on signal processing 41.10 (1993): 3024-3051.
+%
+% author: skacprza@agh.edu.pl
 
 assert(length(x) >= 3,'Signal is too short!');
 
@@ -25,6 +27,6 @@ end
 
 % Teager Energy Operator
 function [energy] = teo(x)
-energy = x(2:end-1).^2  - x(3:end).*x(1:end-2);
-energy = [energy(1) energy energy(end)]; % extrapolate samples
+  energy = x(2:end-1).^2  - x(3:end).*x(1:end-2);
+  energy = [energy(1) energy energy(end)]; % extrapolate samples
 end
