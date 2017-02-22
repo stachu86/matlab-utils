@@ -1,5 +1,5 @@
 function [ ins_f ] = desa1( x, fs )
-%DESA1 Discrete Energy Separation Algorithm
+%DESA1 Calculates instantaneous frequency using Discrete Energy Separation Algorithm
 %
 %   Input:
 %       x - real valued signal vector
