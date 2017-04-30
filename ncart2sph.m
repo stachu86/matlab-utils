@@ -12,7 +12,7 @@ SPH = cell(m,1);
 
 for i=1:m
     sph = zeros(1,n);
-    sph(1) = norm(cart);
+    sph(1) = norm(cart(i,:));
     for k=1:n-1
         denom = norm(cart(i,k:n));
         if denom ~= 0
